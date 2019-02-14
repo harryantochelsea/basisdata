@@ -42,7 +42,7 @@ select * from mahasiswa where jenis_kelamin="Laki-laki" and kota="Bekasi" or tan
 9.Tampilkan data nama dan alamat mahasiswa saja dari tabel tersebut
 select nama, alamat_jalan from mahasiswa;
 10.Tampilkan data mahasiswa terurut berdasarkan nama
-select * from mahasiswa order nama asc;
+select * from mahasiswa order by nama asc;
 
 SEKIAN TUTORIAL DARI SAYA SILAKAN LIKE,COMMENT AND SUBSCRIBE CHANNEL HARRYANTO CHELSEA
 TERIMA KASIH
