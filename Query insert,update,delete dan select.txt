@@ -1,0 +1,35 @@
+BERIKUT ADALAH TUTORIAL,INSERT,UPDATE DAN DELETE DI MYSQL
+Tugas Praktikum
+1.Isi data pada table tersebut sebanyak minimal 5 record data
+caranya:
+insert into mahasiswa
+(nim, nama, alamat_jalan, kota, kodepos, no_hp, jenis_kelamin, tanggal_lahir, kode_dosen)
+values
+("11223344", "Ari Santoso", "Jl.Kayu Ringin No.12", "Bekasi", "17145", "081326444555", "Laki-laki", "1998-10-12", "PBD10"),
+("11223345", "Ario Talib", "Jl.Cikarang Baru Raya No.99", "Cikarang", "17530", "08771818777888", "Laki-laki", "1999-11-16", "PBD15"),
+("11223346", "Dina Marlina", "Jl.Proklamasi No.17", "Karawang", "41312", "0857831919777", "Perempuan", "1997-12-01", "PBD12"),
+("11223347", "Lisa Ayu", "Jl.Jend. Ahmad Yani No.112", "Bekasi", "17146", "081912123435", "Perempuan", "1996-01-02", "PBD19"),
+("11223348", "Tiara Wahidah", "Jl.Cut Mutia No.88", "Bekasi", "17147", "081288889999", "Perempuan", "1980-02-05", "PBD17"),
+("11223349", "Anton Sinaga", "Jl.Pangeran Diponegoro No.77", "Cikarang", "17531", "087760303310", "Laki-laki", "1988-03-10", "PBD25");
+2.Tampilkan semua isi/record tabel! 
+select * from mahasiswa;
+3.Ubah data tanggal lahir mahasiswa yang bernama Ari menjadi :  1979-08-31!
+update mahasiswa set tanggal_lahir="1979-08-31" where nim="11223344";  
+4.Tampilkan satu baris / record data yang telah diubah tadi yaitu record dengan  nama Ari saja! 
+select * from mahasiswa where nama="Ari Santoso"; 
+5.Hapus Mahasiswa yang bernama Dina!
+delete from mahasiswa where nama="Dina Marlina";
+6.Tampilkan record atau data yang tanggal kelahirannya lebih dari atau sama dengan 1996-1-2! 
+select nama, tanggal_lahir from mahasiswa where tanggal_lahir >="1996-01-02" order by nama; 
+7.Tampilkan semua Mahasiswa yang berasal dari Bekasi dan berjenis kelamin perempuan! 
+select nama, jenis_kelamin, kota from mahasiswa where kota="Bekasi" and jenis_kelamin="Perempuan"; 
+8.Tampilkan semua Mahasiswa yang berasal dari Bekasi dengan kelamin laki-laki atau Mahasiswa yang berumur lebih dari 22 tahun dengan kelamin wanita!
+select * from mahasiswa where jenis_kelamin="Laki-laki" and kota="Bekasi" or tanggal_lahir <="1997" and jenis_kelamin="Perempuan";
+9.Tampilkan data nama dan alamat mahasiswa saja dari tabel tersebut
+select nama, alamat_jalan from mahasiswa;
+10.Tampilkan data mahasiswa terurut berdasarkan nama
+select * from mahasiswa order nama asc
+
+SEKIAN TUTORIAL DARI SAYA SILAKAN LIKE,COMMENT AND SUBSCRIBE CHANNEL HARRYANTO CHELSEA
+TERIMA KASIH
+
